@@ -8,9 +8,9 @@ __global__ void naiveGEMM_kernel(const float* __restrict__ a, const float* __res
     int col = blockIdx.x * blockDim.x + threadIdx.x;
     int row = blockIdx.y * blockDim.y + threadIdx.y;
 
-    float sum = 0.0F;
     if(col < n && row < n)
     {
+        float sum = 0.0F;
         for (int k = 0; k < n; k++)
             sum += a[row * n + k] * b[k * n + col];
         c[row*n + col] = sum;
