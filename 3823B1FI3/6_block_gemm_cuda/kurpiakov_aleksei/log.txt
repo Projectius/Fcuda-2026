@@ -1,17 +1,1 @@
-/home/crazyproger/sandbox/cuda-2026/3823B1FI3/6_block_gemm_cuda/kurpiakov_aleksei/block_gemm_cuda.cu(4): error: explicit type is missing ("int" assumed)
-  static const blk_size = 32;
-               ^
-
-/home/crazyproger/sandbox/cuda-2026/3823B1FI3/6_block_gemm_cuda/kurpiakov_aleksei/block_gemm_cuda.cu(6): error: duplicate parameter name
-  __attribute__((global)) void Kernel(float* vec_a, float* vec_a, float* vec_c, int n, int num_blocks){
-                                                           ^
-
-/home/crazyproger/sandbox/cuda-2026/3823B1FI3/6_block_gemm_cuda/kurpiakov_aleksei/block_gemm_cuda.cu(19): error: identifier "vec_b" is undefined
-          B[threadIdx.y][threadIdx.x] = vec_b[(block_k * blk_size + threadIdx.y) * n + tid_x];
-                                        ^
-
-/home/crazyproger/sandbox/cuda-2026/3823B1FI3/6_block_gemm_cuda/kurpiakov_aleksei/block_gemm_cuda.cu(70): error: explicit type is missing ("int" assumed)
-      static const size = n / blk_size;
-                   ^
-
-4 errors detected in the compilation of "/home/crazyproger/sandbox/cuda-2026/3823B1FI3/6_block_gemm_cuda/kurpiakov_aleksei/block_gemm_cuda.cu".
+malloc(): corrupted top size
