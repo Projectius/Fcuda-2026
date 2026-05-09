@@ -1,5 +1,6 @@
 #pragma GCC optimize("Ofast")
-#pragma GCC target("avx2, fma")
+#pragma GCC optimize("unroll-loops")
+#pragma GCC target("avx, avx2, fma")
 
 #include <vector>
 #include <cmath>
@@ -13,6 +14,7 @@
 2. Inlined function into loop
 3. Thread parallelism + SIMD for each thread
 4. Flags
+5. loop-unrolling (should help?)
 */
 
 constexpr float coeff_1 = 1.59576912f;
