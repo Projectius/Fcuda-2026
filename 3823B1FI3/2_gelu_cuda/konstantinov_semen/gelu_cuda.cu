@@ -1,4 +1,3 @@
-// gelu_cuda.cu
 #include "gelu_cuda.h"
 #include <cuda_runtime.h>
 #include <cmath>
